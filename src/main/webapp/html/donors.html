@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor List</title>
+    <link rel="stylesheet" href="../css/donors.css">
+    <script src="../js/donor.js" defer></script>
+</head>
+<body>
+
+<!-- Header Section -->
+<div class="header">
+    <div class="logo">Blood Bank</div>
+    <div class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="register.html">Register</a>
+        <a href="../LogoutServlet">Logout</a>
+    </div>
+</div>
+
+<div class="container">
+    <h2>Blood Donor List</h2>
+
+    <label for="bloodGroup">Select Blood Group:</label>
+    <select id="bloodGroup" onchange="searchDonors()">
+        <option value="">All</option>
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+    </select>
+
+    <table border="1">
+        <thead>
+        <tr>
+            <th>Sl No</th>
+            <th>Name</th>
+            <th>Blood Group</th>
+            <th>Phone</th>
+            <th>Sex</th>
+            <th>Place</th>
+            <th>Last Donated Date</th>
+        </tr>
+        </thead>
+        <tbody id="donorTableBody">
+        <tr><td colspan='7'>Loading donors...</td></tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

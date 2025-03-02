@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donor Registration</title>
     <link rel="stylesheet" type="text/css" href="../css/register.css">
-    <script src="../js/register.js"></script>
+    <script defer src="../js/register.js"></script>
 </head>
 <body>
 
-<!-- Header Section -->
 <div class="header">
     <div class="logo">Blood Bank</div>
     <div class="nav-links">
@@ -19,10 +18,9 @@
     </div>
 </div>
 
-<!-- Registration Form -->
 <div class="container">
     <h2>Donor Registration Form</h2>
-    <form action="RegisterDonorServlet" method="post">
+    <form id="donorForm">
         <label>Name:</label>
         <input type="text" name="name" required>
 
@@ -57,10 +55,8 @@
         <input type="submit" value="Register">
     </form>
 
-    <!-- Error Message (If any) -->
     <div class="error-message" id="errorMessage" style="color: red; text-align: center;"></div>
 </div>
-
 
 </body>
 </html>
