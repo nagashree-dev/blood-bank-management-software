@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Simulating server-side validation
         if (username === 'admin' && password === 'admin') {
             // If credentials are correct, navigate to home.html
-            window.location.href = "home.html";
+            window.location.href = "./home.html";
         } else {
             // If credentials are incorrect, display an error message
             errorMessageDiv.textContent = "Invalid Credentials. Please try again.";
