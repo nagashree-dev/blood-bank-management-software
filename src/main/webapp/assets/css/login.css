@@ -1,0 +1,131 @@
+/* ===== Global Styles ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* ===== Header Styling (Same as Other Pages) ===== */
+.header {
+    background: #c0392b; /* Red background */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 70px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo Styling - Full Height Black Box */
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    background: black;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+/* ===== Bigger & Darker Login Container ===== */
+.login-container {
+    background: #2c2c2c; /* Dark gray background */
+    padding: 50px; /* Bigger padding */
+    border-radius: 15px;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.3);
+    width: 500px; /* Wider container */
+    text-align: center;
+    position: relative;
+    top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Login Title */
+.login-container h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: white; /* White text */
+    margin-bottom: 25px;
+}
+
+/* Input Fields */
+.input-box {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 92%;
+    padding: 14px;
+    font-size: 20px;
+    border: 2px solid #555;
+    border-radius: 30px;
+    outline: none;
+    transition: 0.3s;
+    text-align: center;
+    background: #444; /* Darker input box */
+    color: white; /* White text */
+}
+
+.input-box input::placeholder {
+    color: #bbb; /* Lighter placeholder */
+}
+
+.input-box input:focus {
+    border-color: #ff5252;
+    box-shadow: 0px 0px 8px rgba(255, 82, 82, 0.5);
+}
+
+/* Bigger & Stylish Login Button */
+.btn {
+    background: linear-gradient(135deg, #d32f2f, #ff5252);
+    color: white;
+    border: none;
+    padding: 16px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 92%;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #388e3c, #66bb6a);
+    transform: scale(1.05);
+    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Error Message */
+.error-message {
+    color: #ff5252;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 500px) {
+    .login-container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .input-box input, .btn {
+        width: 100%;
+    }
+}
